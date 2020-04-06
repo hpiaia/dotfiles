@@ -3,6 +3,7 @@
 # ---
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 export ZSH="/Users/hpiaia/.oh-my-zsh"
 
@@ -43,6 +44,10 @@ source $ZSH/oh-my-zsh.sh
 # Git
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
+
+# Laravel
+alias art="php artisan"
+alias mfs="php artisan migrate:fresh --seed"
 
 # ---
 # * Plugins
