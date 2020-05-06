@@ -19,7 +19,7 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-SPACESHIP_PROMPT_ORDER=(dir git char)
+SPACESHIP_PROMPT_ORDER=(user dir host git char)
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
