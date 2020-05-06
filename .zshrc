@@ -36,9 +36,9 @@ unsetopt PROMPT_SP
 # ---
 
 # Git
+alias git="hub"
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
-eval "$(hub alias -s)"
 
 # Laravel
 alias art="php artisan"
