@@ -17,14 +17,18 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 # * Zsh Configuration
 # ---
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="spaceship"
 
 plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
 
-source $ZSH/oh-my-zsh.sh
+SPACESHIP_PROMPT_ORDER=(user dir host git char)
+SPACESHIP_USER_SHOW=always
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+SPACESHIP_CHAR_SYMBOL="❯"
+SPACESHIP_CHAR_SUFFIX=" "
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source $ZSH/oh-my-zsh.sh
 
 unsetopt PROMPT_SP
 
