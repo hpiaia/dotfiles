@@ -3,13 +3,6 @@
 # ---
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$HOME/.composer/vendor/bin:$PATH
-
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 export ZSH="/Users/hpiaia/.oh-my-zsh"
 
@@ -19,7 +12,7 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-plugins=(git zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(git zsh-autosuggestions zsh-completions)
 
 SPACESHIP_PROMPT_ORDER=(user dir host git char)
 SPACESHIP_USER_SHOW=always
@@ -40,7 +33,3 @@ unsetopt PROMPT_SP
 alias git="hub"
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
-
-# Laravel
-alias art="php artisan"
-alias mfs="php artisan migrate:fresh --seed"
