@@ -33,3 +33,7 @@ unsetopt PROMPT_SP
 alias git="hub"
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
+
+# Laravel
+alias art="php artisan"
+alias mfs="php artisan db:fresh --seed"
