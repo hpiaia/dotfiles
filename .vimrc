@@ -1,5 +1,4 @@
 syntax enable           " enable syntax processing
-set relativenumber      " show relative line numbers
 set showcmd             " show command in bottom bar
 set cursorline          " highlight current line
 set wildmenu            " visual autocomplete for command menu
