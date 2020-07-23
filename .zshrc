@@ -3,6 +3,7 @@
 # ---
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.composer/vendor/bin:$PATH
 
 export ZSH="/Users/hpiaia/.oh-my-zsh"
 
