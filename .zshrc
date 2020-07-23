@@ -37,4 +37,4 @@ alias nah="git reset --hard && git clean -df"
 
 # Laravel
 alias art="php artisan"
-alias mfs="php artisan db:fresh --seed"
+alias mfs="php artisan migrate:fresh --seed"
