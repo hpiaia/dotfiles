@@ -13,7 +13,7 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-plugins=(git zsh-autosuggestions zsh-completions)
+plugins=(git docker docker-compose kubectl)
 
 SPACESHIP_PROMPT_ORDER=(user dir host git char)
 SPACESHIP_USER_SHOW=always
@@ -21,13 +21,6 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 SPACESHIP_PROMPT_SEPARATE_LINE=false
 SPACESHIP_CHAR_SYMBOL="❯"
 SPACESHIP_CHAR_SUFFIX=" "
-
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-
-  autoload -Uz compinit
-  compinit
-fi
 
 source $ZSH/oh-my-zsh.sh
 
@@ -45,3 +38,7 @@ alias nah="git reset --hard && git clean -df"
 # Laravel
 alias art="php artisan"
 alias mfs="php artisan migrate:fresh --seed"
+
+# ---
+# * Plugins
+# ---
