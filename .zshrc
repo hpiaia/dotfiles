@@ -13,7 +13,7 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 ZSH_THEME="spaceship"
 
-plugins=(zsh-autosuggestions zsh-syntax-highlighting zsh-completions git docker docker-compose kubectl heroku)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 SPACESHIP_PROMPT_ORDER=(user dir host git char)
 SPACESHIP_USER_SHOW=always
@@ -31,7 +31,6 @@ unsetopt PROMPT_SP
 # ---
 
 # Git
-alias git="hub"
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
 
