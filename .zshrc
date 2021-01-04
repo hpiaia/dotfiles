@@ -3,6 +3,7 @@
 # ---
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 # ---
@@ -11,7 +12,7 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 ZSH_THEME="robbyrussell"
 
-plugins=(git)
+plugins=(git kubectl terraform)
 
 source $ZSH/oh-my-zsh.sh
 
