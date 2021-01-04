@@ -16,6 +16,8 @@ plugins=(git kubectl terraform)
 
 source $ZSH/oh-my-zsh.sh
 
+unsetopt PROMPT_SP
+
 # ---
 # * Aliases
 # ---
