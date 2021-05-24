@@ -26,6 +26,10 @@ unsetopt PROMPT_SP
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
 
+# Misc
+alias ls="exa -l"
+alias cat="bat"
+
 # ---
 # * Plugins
 # ---
