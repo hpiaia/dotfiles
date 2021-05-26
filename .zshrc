@@ -31,10 +31,6 @@ alias nah="git reset --hard && git clean -df"
 alias art="php artisan"
 alias mfs="art migrate:fresh --seed"
 
-# Misc
-alias ls="exa -l"
-alias cat="bat"
-
 # ---
 # * Plugins
 # ---
