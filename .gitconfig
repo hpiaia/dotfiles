@@ -16,7 +16,8 @@ remotes = remote -v
 default = current
 
 [pull]
+default = current
 rebase = false
 
 [init]
-defaultBranch = master
+defaultBranch = main
