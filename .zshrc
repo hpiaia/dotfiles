@@ -14,7 +14,7 @@ export ZSH="/Users/hpiaia/.oh-my-zsh"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
 
-plugins=(git brew)
+plugins=(git brew docker node npm zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -32,16 +32,12 @@ alias nah="git reset --hard && git clean -df"
 alias art="php artisan"
 alias mfs="art migrate:fresh --seed"
 
-function tinker()
-{
-  if [ -z "$1" ]
-    then
-      php artisan tinker
-    else
-      php artisan tinker --execute="dd($1);"
-  fi
-}
+# Misc
+alias ls="exa"
 
 # ---
 # * Plugins
 # ---
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
