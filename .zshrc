@@ -7,17 +7,19 @@ export PATH=$HOME/.composer/vendor/bin:$PATH
 
 export ZSH="/Users/hpiaia/.oh-my-zsh"
 
+
 # ---
 # * Zsh Configuration
 # ---
 
-ZSH_THEME="powerlevel10k/powerlevel10k"
+ZSH_THEME="robbyrussell"
 
 plugins=(git brew)
 
 source $ZSH/oh-my-zsh.sh
 
 unsetopt PROMPT_SP
+
 
 # ---
 # * Aliases
@@ -30,6 +32,7 @@ alias nah="git reset --hard && git clean -df"
 # Laravel
 alias art="php artisan"
 alias mfs="art migrate:fresh --seed"
+
 
 # ---
 # * Plugins
