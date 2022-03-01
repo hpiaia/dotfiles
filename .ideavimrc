@@ -1,6 +1,0 @@
-source ~/.vimrc
-
-set scrolloff=5
-set incsearch
-
-Plug 'preservim/nerdtree'
