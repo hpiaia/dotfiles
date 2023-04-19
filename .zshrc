@@ -2,16 +2,23 @@
 # * Exports
 # ---
 
-export PATH=$HOME/bin:/usr/local/bin:/opt/homebrew/bin:$PATH
+export GOPATH=$HOME/.go
+
+export PATH=/opt/homebrew/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.cargo/bin:$PATH
+export PATH=$GOPATH:$PATH
 
 export ZSH="/Users/hpiaia/.oh-my-zsh"
 
+export GIT_EXTERNAL_DIFF=difft
 
 # ---
 # * Zsh Configuration
 # ---
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="ys"
 
 plugins=(git brew)
 
@@ -28,7 +35,12 @@ unsetopt PROMPT_SP
 alias wip="git add . && git commit -m 'wip'"
 alias nah="git reset --hard && git clean -df"
 
+# Utils
+alias ls="exa"
+alias cat="bat"
+
 
 # ---
 # * Plugins
 # ---
+
