@@ -37,7 +37,7 @@ alias nah="git reset --hard && git clean -df"
 
 # Utils
 alias ls="exa"
-alias cat="bat"
+alias cat="bat -p"
 
 
 # ---
